@@ -38,9 +38,11 @@ def domain_name(url):
     return result
             
         
-print(domain_name("http://google.com"))
-print(domain_name("http://google.co.jp"))
-print(domain_name("www.xakep.ru"))
-print(domain_name("http://www.codewars.com"))
+# print(domain_name("http://google.com"))
+# print(domain_name("http://google.co.jp"))
+# print(domain_name("www.xakep.ru"))
+# print(domain_name("http://www.codewars.com"))
+
+### BOTH OF THESE NEED TO OUTPUT "123" ###
 print(domain_name("123.com"))
 print(domain_name('https://123'))
