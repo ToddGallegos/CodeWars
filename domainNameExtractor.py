@@ -8,8 +8,19 @@
 # test.assert_equals(domain_name("https://youtube.com"), "youtube")
 
 def domain_name(url):
-    for char in url:
-        print(char)
+    result = ""
+    leftpoint = 0
+    rightpoint = 0
+    for i in len(url):
+        if url[i] == "/" and url[i-1] == "/":
+            leftpoint = i+1
+            for j in range(i+2, len(url)):
+                if url[j] == ".":
+                    rightpoint = j - 1
+    for i in range(leftpoint, rightpoint + 1):
+        result += url[i]
+    return result
+            
         
-domain_name("http://google.com")
+print(domain_name("http://google.com"))
 
