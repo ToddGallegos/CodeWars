@@ -11,7 +11,7 @@ def domain_name(url):
     result = ""
     leftpoint = 0
     rightpoint = 0
-    for i in len(url):
+    for i in range(len(url)):
         if url[i] == "/" and url[i-1] == "/":
             leftpoint = i+1
             for j in range(i+2, len(url)):
