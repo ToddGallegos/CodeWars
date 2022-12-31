@@ -12,3 +12,4 @@ def domain_name(url):
         print(char)
         
 domain_name("http://google.com")
+
